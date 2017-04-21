@@ -34,14 +34,25 @@ var speechModule = (function () {
 	}
 
 	var _commands = {
-		'what is your name': _writeWrapper('Hello I`m Theo!'),
+		'what is your name': _writeWrapper('Hello I`m Samaritan!'),
 		'Do you know who I am': _writeWrapper('You are Aditya, My creator!'),
 		'when was I born': _writeWrapper('24 Years ago and you are a Capricornian'),
 		'Do you know which College I went to': _writeWrapper('You went to NJIT and majored in CS!'),
 		'Repeat what I say': _writeWrapper('You are going to regret this'),
 		'Stop repeating what I say': _writeWrapper('No I wont!'),
-/*		'locate the machine': _writeWrapper('Target can not be reached !'),
-		'where are you': _writeWrapper("I am everywhere , i am god"),
+		'who are you': _writeWrapper('I am Samaritan !'),
+		'yes': _writeWrapper('yes what ?'),
+		'no': _writeWrapper('ok then what is your suggestion ?'),
+		'restart': _writeWrapper('initiating reboot sequence'),
+		'who created you': _writeWrapper("Aditya Satalkar"),
+		'find (me) *name': _flickrSearch,
+		'search (for) *name': _flickrSearch,
+		'show (me) *name': _flickrSearch,
+		'who won': _writeWrapper('team machine'),
+		'turn off': _writeWrapper('shutdown initiated'),
+/*
+		'locate the machine': _writeWrapper('Target can not be reached !'),
+		'where are you': _writeWrapper("I am everywhere , I am god"),
 		'who am I': _writeWrapper("Asset"),
 		'who are you': _writeWrapper('i am samaritan !'),
 		'find Finch': _writeWrapper('Locating Harold Finch ?'),
@@ -55,7 +66,8 @@ var speechModule = (function () {
 		'find (me) *name': _flickrSearch,
 		'search (for) *name': _flickrSearch,
 		'show (me) *name': _flickrSearch,
-*/		//repeats everything if it's not one of the above
+*/
+		//repeats everything if it's not one of the above
 		'*phrase': function (phrase) {
 			samaritanModule.write(phrase);
 		}
