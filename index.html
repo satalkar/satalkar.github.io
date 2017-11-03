@@ -1,68 +1,1105 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Samaritan</title>
-        <meta charset="UTF-8">
-        <meta name="theme-color" content="#000000">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="icon" sizes="192x192" href="img/icon.png">
-		<link rel="manifest" href="manifest.json">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="js/velocity.min.js"></script>
-        <script type="text/javascript" src="js/screenfull.min.js"></script>
-        <script type="text/javascript" src="js/phraselist.js"></script>
-        <script type="text/javascript" src="js/samaritan.js"></script>
-        <script type="text/javascript" src="js/annyang.min.js"></script>
-        <script type="text/javascript" src="js/speech.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-		<div id="boot-screen" style="margin: 0; height:100vh; pointer-events: none;">
-			<div id="boot-video"></div>
-			<script>
-				var tag = document.createElement('script');
-				tag.src = "https://www.youtube.com/player_api";
+<!--
 
-				var firstScriptTag = document.getElementsByTagName('script')[0];
-				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	                ____  Hello I am  __
 
-				var player;
 
-				function onYouTubePlayerAPIReady() {
-					player = new YT.Player('boot-video', {
-						height: '100%',
-						width: '100%',
-						videoId: 'xHAzhkIt0z4',
-						playerVars: {
-							rel: 0,
-							autoplay: 1,
-							showinfo: 0,
-							iv_load_policy: 3,
-							controls: 0,
-							modestbranding: 1,
-							enablejsapi: 1
-						},
-						events: {
-							'onReady': onPlayerReady,
-						}
-					});
+ ______     _____     __     ______   __  __     ______      
+/\  __ \   /\  __-.  /\ \   /\__  _\ /\ \_\ \   /\  __ \   
+\ \  __ \  \ \ \/\ \ \ \ \  \/_/\ \/ \ \____ \  \ \  __ \  
+ \ \_\ \_\  \ \____-  \ \_\    \ \_\  \/\_____\  \ \_\ \_\ 
+  \/_/\/_/   \/____/   \/_/     \/_/   \/_____/   \/_/\/_/ 
+
+                    
+                        you like code?
+                    have an eye for details?
+                            Hire me!
+                        Contact me at :
+
+                   aditya.satalkar@gmail.com
+
+                        Aditya Satalkar
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+		
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="content-script-type" content="text/javascript">
+	<meta http-equiv="content-style-type" content="text/css">
+	<meta http-equiv="content-language" content="en">
+	<meta http-equiv="Cache-control" content="public">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Aditya Satalkar">	
+	<meta name="description" content="A Master's student at NJIT majoring in the Computer Science">
+	<meta name="keywords" content="Aditya Satalkar, Web Developer, Java Developer, Technology Specialist, Aditya Satalkar Resume">
+	<meta name="robots" content="index, follow">
+	<meta name="revisit-after" content="2 days">
+	<title>Aditya Satalkar</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link href="css/minified.css" rel="stylesheet">
+
+				<!-- Begin Inspectlet Embed Code -->
+
+		<script type="text/javascript" id="inspectletjs">
+			window.__insp = window.__insp || [];
+			__insp.push(['wid', 1553935167]);
+			(function() {
+				function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+				if (window.attachEvent){
+					window.attachEvent('onload', __ldinsp);
+				}else{
+					window.addEventListener('load', __ldinsp, false);
 				}
+			})();
+		</script>
+		<!-- End Inspectlet Embed Code -->
+</head>
 
-				function onPlayerReady(event) {
-					event.target.mute();
-				}
-			</script>
+
+
+
+	<body data-twttr-rendered="true" data-spy="scroll" data-target="#navbar-example">	 
+
+		<div id="top" class="jumbotron">
+			<div class="container landingpage">
+			<!--<img src="logos/aditya_satalkar_logo.png" alt="Aditya Satalkar logo" height="140" width="140">-->
+				<h1>Aditya Satalkar</h1>
+				<p class="lead">Welcome</p>
+			</div>
+			
+			<div class="overlay"></div>
+			
+			<a href="index.html#profile" class="scroll-down" >	
+				<span class="fa fa-chevron-down" data-sr="wait 0.8s and enter bottom and move 100% over 2s"></span>
+			</a>
 		</div>
-        <div id="interface">
-			<div id="main">
-				<p>&nbsp;</p>
-				<hr />
+
+
+		
+<!--		<nav class="navbar navbar-default" id="navbar-example" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+<!--			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
-			<div id="marker">
-				<span id="triangle">&#9650</span>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+<!--			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html#profile">Profile</a></li>
+					<li><a href="index.html#experience">Experience</a></li>
+					<li><a href="index.html#abilities">Abilities</a></li>
+                    <li><a href="index.html#education">Education</a></li>
+					<li><a href="index.html#projects">Projects</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
 			</div>
-        </div>
-    </body>
-</html>
+		</nav><!-- /.navbar-collapse -->
+		
+		<div class="background-white">
+			<div id="profile" class="container">
+				<h2>Profile</h2>
+<p class="lead"></p>
+
+<hr>
+
+<div class="row">
+	<div class="col-md-4">
+		<h3>About me</h3>
+		<p>
+			I'm an Augmented Reality Software Engineer with a Master's degree from New Jersey Institute of Technology in Computer Science with interests in Software Developement, Web Technologies, UX Design, and Product Management.</p>
+	</div>
+	<div class="col-md-4 text-center">
+		<img src="images/Aditya_Satalkar.JPG.gif" alt="Aditya Satalkar" width=”188″ height=”186” data-sr='scale up 5% over 1s and reset'>
+	</div>
+	<div class="col-md-4" style="text-align:right;">
+		<h3>Details</h3>
+		<p>
+			<strong>Full name:</strong><br>
+			Aditya Rajendra Satalkar<br>
+			<strong>Graduation date:</strong><br>
+			Dec 2016<br>
+			<strong>Current Location:</strong><br>Greater New York Area<br></p>
+		<div id="linkedinbtn" data-sr='scale up 20% over 1.8s and reset'><a href="https://www.linkedin.com/in/adityasatalkar" target="_blank" alt="Aditya Satalkar LinkedIn Professional Profile Link">
+      
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x25.png" width="160" height="25" border="0" alt="View Aditya Satalkar's profile on LinkedIn">
+        
+    </a>
+	</div></div>
+</div>			</div>	
+		</div>	
+		
+
+
+<div class="background-professional">
+<div id="experience" class="container">
+			<h2>Work Experience</h2>
+<p class="lead">
+	“It’s not who you are underneath. It’s what you do that defines you.”<br>- Bruce Wayne <br><br> So this is what I do !
+</p>
+
+<hr>
+
+
+	<div class="experience row">
+		<div class="col-md-4">
+			<h4>Apprentice FS Inc</h4>
+			<p class="experience-period">
+				March 2017				- 
+				Present</p>
+		</div>
+		<div class="col-md-8">
+			<p>
+				<strong>Augmented Reality Software Engineer</strong>
+				<div class="hideinphone">
+					<ul>
+						<li>Optimized an existing Android app that uses OCR along with Machine Learning to convert Handwritten text to plain text and stores to log file on AWS with user’s profile.</li>
+						<li>Automated tasks on AWS S3 using shell and logs stored locally on CSV file.</li>
+						<li>Developed RESTful API using MEAN Stack.</li>
+						<li>Developed Android AR Apps for Vuzix M300 smart-glasses following TDD, DRY principle and MVP framework.</li>
+						<li>Optimized the app to lessen battery usage and calls to the network by prefetching content using custom Cache manager. Also developed 3D models using Blender.</li>
+					</ul>
+						</div>
+				<span class="experience-details">
+					<span class="location">
+						<span class="fa fa-map-marker"></span>
+						190 Chiristopher Columbus Dr, Jersey City, NJ, USA</span>
+					
+										
+					<span class="separator">|</span>
+					<span class="link">
+						<span class="fa fa-link"></span>
+						<a href="https://www.apprenticefs.com" target="_blank">https://www.apprenticefs.com</a>
+
+					</span>
+					
+										
+				</span>
+			</p>
+		</div>
+	</div>
+
+
+
+
+	<div class="experience row">
+		<div class="col-md-4">
+			<h4>The Neighborhood</h4>
+			<p class="experience-period">
+				May 2016				- 
+				March 2017</p>
+		</div>
+		<div class="col-md-8">
+			<p>
+				<strong>Full Stack Developer Intern</strong>
+				<div class="hideinphone">
+					<ul>
+					<li>Worked as Full Stack Developer Intern with 'The Neighborhood' a startup based in FiDi New York. Designed and developed startup's first website for subscription based recurring payments and POS for on-field sales.</li>
+					<li>Website allows customers to select a product from a list of categories and they will be recursively billed every month, updating their membership.</li>
+					<li> Used Shopify, ReCharge and Stripe API for building website and am currently using their API's for App development. The APIs request are used to receive data from Shopify for generation of user database and to make payments using ReCharge and Stripe.</li>
+					<li>  Also in the piplelines are app development for iOS and Android which will allow the users to subscribe from the App and also check their plans and edit them if need be.</li>
+					<!--
+					<li>Supporting executives in gathering insights to geographic and demographic facts of clients by creating visualizations in MS Excel using Power Map and Power View.</li>
+					<li>Act as a liaison with the vendor in implementing changes and new solutions to existing data management system as per the requests from Attorneys and Paralegals.</li>
+					-->
+					</ul>
+				</div>
+				<span class="experience-details">
+					<span class="location">
+						<span class="fa fa-map-marker"></span>
+						110 Wall Street, New York, NY</span>
+					
+										
+					<span class="separator">|</span>
+					<span class="link">
+						<span class="fa fa-link"></span>
+						<a href="https://ilovetheneighborhood.com" target="_blank" alt="Aditya Satalkar Full Stack Developer Intern 2016">https://ilovetheneighborhood.com</a>
+					</span>
+					
+										
+				</span>
+			</p>
+		</div>
+	</div>
+	
+	<div class="experience row">
+		<div class="col-md-4">
+			<h4>Persistent Systems Limited</h4>
+			<p class="experience-period">
+				June 2013				- 
+				May 2014</p>
+		</div>
+		<div class="col-md-8">
+			<p>
+				<strong>Software Developer Intern</strong>
+				<div class="hideinphone">
+					<ul>
+					<li>My Undergrad project was sponsored by Persistent Systems Ltd. We developed a Platform Independent Test Automation Framework using Selenium, Java and TestNG.</li>
+					<li> The main function of the software was to automate the test cases using the input values given to the software in the form of an XML file or Excel data sheets. </li>
+					<li>The software then automated the tests that were to be carried out from the test cases specified. This project helped the company save about $7000 in license costs.</li>
+					</ul>
+						</div>
+				<span class="experience-details">
+					<span class="location">
+						<span class="fa fa-map-marker"></span>
+						Pune, Maharashtra, India					</span>
+					
+										
+					<span class="separator">|</span>
+					<span class="link">
+						<span class="fa fa-link"></span>
+						<a href="https://www.persistent.com" target="_blank">https://www.persistent.com</a>
+
+					</span>
+					
+										
+				</span>
+			</p>
+		</div>
+	</div>
+	
+</div>
+	
+		</div>
+		
+		<div class="background-white">
+			<div id="abilities" class="container">
+				<h2>Abilities</h2>
+<p class="lead">
+	“It isn't bragging if you can do it”<br>- Dizzy Dean
+</p>
+<hr>
+<h3>A Few Things I am Good @</h3>
+
+<div class="row">
+	<div class="col-md-6">
+		<ul class="no-bullets">
+		
+			<li>
+				<span class="ability-title">SQL</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">Data Analysis</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">Project Management</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">Java</span>
+			</li>
+			<li>
+				<span class="ability-title">Web Development</span>
+			</li>
+
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<ul class="no-bullets">
+		
+			<li>
+				<span class="ability-title">Software Development Life Cycle</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">Leadership and Team Management</span>
+			</li>
+	
+			<li>
+				<span class="ability-title">Network Management and Security</span>
+			</li>
+			
+			<li>
+				<span class="ability-title">Database Management & Design </span>
+			</li>
+
+		</ul>
+	</div>
+</div>
+<hr>
+<h3>Database Skills</h3>
+
+<div class="row">
+	<div class="col-md-6">
+		<ul class="no-bullets">
+			<li>
+				<span class="ability-title">SQL</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">Oracle Database</span>
+			</li>
+			<li>
+				<span class="ability-title">NoSQL</span>
+			</li>
+		</ul>	
+	</div>
+	<div class="col-md-6">
+		<ul class="no-bullets">
+			<li>
+				<span class="ability-title">MongoDB</span>
+			</li>
+			<li>
+				<span class="ability-title">Microsoft SQL Server</span>
+			</li>
+			<li>
+				<span class="ability-title">Microsoft Access</span>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<hr>
+
+<h3>Languages I Know</h3>
+
+<div class="row">
+		
+	<div class="col-md-6">
+		<ul class="no-bullets">
+		
+
+			<li>
+				<span class="ability-title">Java</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">Visual Basic</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">CSS3 / CSS</span>
+			</li>
+				
+			<li>
+				<span class="ability-title">HTML5 / HTML</span>
+			</li>
+	
+					
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<ul class="no-bullets">
+				
+			<li>
+				<span class="ability-title">JQuery</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">JavaScript</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">PHP</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">XML</span>
+				
+			</li>
+		</ul>
+	</div>
+		
+</div>
+
+<hr>
+
+<h3>Web Skills</h3>
+
+<div class="row">
+	<div class="col-md-6">
+		<ul class="no-bullets">
+		<li>
+				<span class="ability-title">Responsive Web Design</span>
+				
+			</li>
+					
+			<li>
+				<span class="ability-title">Bootstrap</span>
+				
+			</li>
+                   
+					
+				
+			<li>
+				<span class="ability-title">WordPress</span>
+				
+			</li>
+
+			
+			
+					
+			
+		</ul>
+	</div>
+<div class="col-md-6">
+		<ul class="no-bullets">
+		<li>
+				<span class="ability-title">API Integration</span>
+				
+			</li>
+
+<li>
+				<span class="ability-title">Web Accessibility</span>
+				
+			</li>
+<li>
+				<span class="ability-title">REST</span>
+				
+			</li>
+</ul>
+</div>
+</div>
+
+<hr>
+
+<h3>Tools</h3>
+
+<div class="row">
+		
+	<div class="col-md-6">
+		<ul class="no-bullets">
+			
+			<li>
+				<span class="ability-title">Microsoft Visio</span>
+				
+			</li>
+			
+					
+				
+			<li>
+				<span class="ability-title">SharePoint</span>
+				
+			</li>
+				
+			<li>
+				<span class="ability-title">Microsoft Office Suite</span>
+				
+			</li>
+			
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<ul class="no-bullets">
+			
+
+		<li>
+				<span class="ability-title">Adobe Acrobat Pro</span>
+				
+		</li>
+		<li>
+				<span class="ability-title">Adobe Illustrator</span>
+		</li>	
+		<li>
+				<span class="ability-title">Adobe Photoshop</span>
+		</li>	
+        <li>
+				<span class="ability-title">Adobe InDesign</span>
+		</li>
+
+		</ul>
+	</div>
+	
+</div>
+
+
+<hr>
+<h3>I Can Speak</h3>
+
+<div class="row">
+	<div class="col-md-6">
+		<ul class="no-bullets">
+		
+				<li>
+				<span class="ability-title">English</span>
+				
+			</li>
+			<li>
+				<span class="ability-title">Marathi (Native)</span>
+				
+			</li>
+			
+					
+				
+			
+			
+			 
+			
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<ul class="no-bullets">
+			
+					
+				
+			<li>
+				<span class="ability-title">Hindi</span>
+				
+			</li>
+			
+					
+				
+			<li>
+				<span class="ability-title">Telugu</span>
+				
+			</li>
+			
+					
+				
+		</ul>
+	</div>	
+</div>
+<br>
+			</div>
+		</div>
+			
+		<div id="education" class="container">
+			<h2>Education</h2>
+<!--
+<p class="lead">
+	“The tragedy in life doesn’t lie in not reaching your goal but in having no goal to reach.” <br>- Benjamin Mays </p>
+-->
+<hr>
+
+<h3>Formal Education</h3>
+
+
+<div class="experience">
+
+					
+	<div class="experience row">
+		<div class="col-md-4">
+			<h4>New Jersey Institute of Technology ( NJIT )</h4>
+			<p class="experience-period">
+				Jan 2015			- 
+				Dec 2016			
+			</p>
+			<img src="images/njit_logo.jpg.png" title="College Seal" alt="NJIT Logo" style="margin-left:16px;" height="110" width="110"></img>
+		</div>
+		<div class="col-md-8">
+			<p>
+				<strong>Master of Science, Computer Science <br><span class="sub"></span></strong>
+				<div class="hideinphone">
+					 A 30-credits master's program which consisted of the following courses. 
+						<ul>
+						<li>Big Data ( Apache Hadoop, implemented on Amazon AWS )</li>
+						<li>Data Mining</li>
+						<li>Data Base Management & Systems Design ( DBMS using SQL )</li>
+						<li>Netwrok Protocol and Security ( Implemented Security Protocols on various networks )</li>
+						<li>Internet & Higher Layer Portocol</li>
+						<li>Java</li>
+						<li>Operating Systems</li>
+						<li>Data Structures and Algorithms</li>
+						<li>Software Project Management</li>
+					</ul>
+					I was also <b>NJIT's Zipcar Brand Ambassador</b> as I was the one who initiated and brought Zipcars on campus
+				</div>
+				<span class="experience-details">
+					<span class="location">
+						<span class="fa fa-map-marker"></span>
+						Newark, NJ, USA					</span>
+						<span class="separator">|</span>
+						<span class="link">
+						<span class="fa fa-link"></span>
+						<a href="http://www.njit.edu" target="_blank">School Website</a>
+					</span>
+				</span>
+			</p>
+		</div>
+	</div>
+	
+		
+		</div>
+					
+	<div class="experience row">
+		<div class="col-md-4">
+			<h4>University of Pune</h4>
+			<p class="experience-period">
+				Aug 2010				- 
+				May 2013			</p>
+			<img src="images/Pune_univ_logo.png" title="UoP Logo" alt="University of Pune Logo" width="137" height="100" style="margin-left:17px" ></img>
+		</div>
+		<div class="col-md-8">
+			<p>
+				<strong>Bachelor of Engineering, Information Technology</strong>
+				<div class="hideinphone">
+					I pursued my Bachelors in Information Technology degree at University of Pune. As I had already been introduced to the technical world of computers in my Diploma degree, I had developed an interest for Open Source projects along with an interest for Databases, Web Development, Java Programming and Network Technologies. I pursued those interests further in depth during my undergraduate study at University of Pune. 
+					<br>
+					<br>
+					I was actively involed in the college activities, which landed me the leadership role of <b>Editor-in-Chief</b>  of College Magazine "Kshitiz". I was also <b>College Treasurer</b> and was responsible for taking care of the expenses for all the college's student activites. These roles helped in the building of a strong foundation of strategic thinking, teamwork and time management skills into me.
+				</div>
+				<span class="experience-details">
+					<span class="location">
+						<span class="fa fa-map-marker"></span>
+										Pune, MH, India	</span>
+					<span class="separator">|</span>
+					<span class="link">
+						<span class="fa fa-link"></span>
+						<a href="http://piit.ac.in/" target="_blank">College Website</a>
+					</span>
+				</span>
+			</p>
+		</div>
+	</div>
+	
+	<div class="experience row">
+		<div class="col-md-4">
+			<h4>Maharashtra Institute of Technology, Pune ( MIT )</h4>
+			<p class="experience-period">
+				Aug 2006				- 
+				May 2009			</p>
+			<img src="images/mit_logo.png" title="MIT Logo" alt="MIT Badge Logo" width="100" height="116" style="margin-left:18px;"></img>
+		</div>
+		<div class="col-md-8">
+			<p>
+				<strong>Diploma, Computer Engineering</strong>
+				<div class="hideinphone">
+					After my 10th grade I identified that my interests lied in Computers, and so I opted for a 3-year technical education that set the basis of my technical education. I chose my concentration to be in the field of Computer Engineering, where I was introduced to Programming Languages such as C, C++ ,Java and VB at a very early age. I also learned about Web Development, Database Design and basics of Computer Engineering and Electronics Engineering, which helped me make my first project which was a Glove mouse.</div>
+				<span class="experience-details">
+					<span class="location">
+						<span class="fa fa-map-marker"></span>
+										Pune, MH, India	</span>
+				<span class="separator">|</span>
+				<span class="link">
+						<span class="fa fa-link"></span>
+						<a href="http://www.sakp.ac.in/" target="_blank">College Website</a>
+					</span>
+			</p>
+		</div>
+	</div>
+	
+	
+
+<hr>
+<h3>Certifications I have</h3>
+<div class="experience">
+	
+	<div class="experience row">
+		<div class="col-md-4">
+		<h4>Microsoft Certified Professional</h4>
+		<p class="experience-period">
+			2014</p>
+			<img src="images/microsoft_logo.jpg.png" title="Microsoft Logo" alt="Microsoft Logo" width="75" height="75" style="margin-left:18px;"></img>
+		</div>
+		<div class="col-md-8">
+			<div class="hideinphone"><p><strong>Helped me understand :</strong>C#, Azure, Ajax, .NET</p></div>
+						
+				<span class="experience-details">
+					<span class="location">
+						<span class="fa fa-graduation-cap"></span>
+						<a href="https://www.microsoft.com/en-us/learning/microsoft-certified-professional.aspx" target="_blank">Microsoft Certified Professional</a>
+					</span>
+						<span class="separator">|</span>
+					<span class="link" >
+						<span class="fa fa-external-link-square" data-sr='wait 1s, scale up 90% over 1.8s, reset'></span>
+						<a href="https://web.njit.edu/~ars75/Certificate_1.pdf" target="_blank">Certificate</a>
+					</span>					
+				</span>
+			</p>
+		</div>
+	</div>
+	
+	<div class="experience row">
+		<div class="col-md-4">
+		<h4>Microsoft Technology Associate</h4>
+		<p class="experience-period">
+			2014</p>
+			<img src="images/microsoft_logo.jpg.png" title="Microsoft Logo" alt="Microsoft Logo" width="75" height="75" style="margin-left:18px;"></img>
+
+		</div>
+		<div class="col-md-8">
+			<div class="hideinphone"><p><strong>Helped me understand :</strong>How to build apps for Microsoft devices using C#. It also helped me learn how to develop Softwares using .NET</p></div>
+						
+				<span class="experience-details">
+					<span class="location">
+						<span class="fa fa-graduation-cap"></span>
+						<a href="https://www.microsoft.com/en-us/learning/mta-certification.aspx" target="_blank">Microsoft Technology Associate</a>
+					</span>
+						<span class="separator">|</span>
+					<span class="link" >
+						<span class="fa fa-external-link-square" data-sr='wait 1s, scale up 90% over 1.8s, reset'></span>
+						<a href="https://web.njit.edu/~ars75/Certificate_2.pdf" target="_blank">Certificate</a>
+					</span>					
+				</span>
+			</p>
+		</div>
+	</div>
+	
+	
+</div>
+</div>
+</div>
+</div>				
+
+
+
+<!--		
+<div id="projects" class="container white">
+			<h2>Projects</h2>
+<p class="lead">
+	“You can do anything you set your mind to.”<br>- Benjamin Franklin
+</p>
+
+<hr>
+
+<div class="row">	
+	<div class="projectsgrid">
+
+		<div class="gallery">
+			
+			<article class="showmore" data-sr="enter top and move 10% over 1.8s and reset">
+				<img src="images/proj7.jpg" alt="Blackbery Strategic Failure Analysis" width=”468″ height=”281”/>
+				<div class="info">
+					<h4>Designed, developed and implemented an Algorithm for Self-Driving Cars</h4>
+					<p>Developed using Open Source Hardware</p>
+				</div>
+				<div class="full">
+				<i class="fa fa-caret-square-o-down"></i>
+					<p>
+						• Developed an algorithm for self-driving cars and successfully implemented on Remote Control car using Arduino, IP Camera, IR Sensors, Linksys Router, and Google Maps API
+						<br>
+						• Using AI, Machine Learning, Deep Learning and Vehicular Networks this can be developed in a full fledged system for everyday regular cars
+					</p>
+				</div>
+			</article>
+
+			<article class="showmore" data-sr="enter top and move 10% over 1.8s and reset">
+				<img src="images/proj8.jpg" alt="Marketing Strategy Improvement using Google Analytics" width=”468″ height=”281”/>
+				<div class="info">
+					<h4>Marketing Strategy Improvement</h4>
+					<p>Using Google Analytics, Developed a new marketing strategy for Whitman School.</p>
+				</div>
+				<div class="full">
+				<i class="fa fa-caret-square-o-down"></i>
+					<p>
+					Analyzed costs, geographic regions and time frame variances to assess the effectiveness of past marketing campaigns using Google Analytics. Strategized a new campaign with improved allocations for cost, geographic region and keywords based on the analysis. 
+					</p>
+				</div>
+			</article>
+
+			<article class="showmore" data-sr="enter top and move 10% over 1.8s and reset">
+				<img src="images/proj6.jpg" alt="Whitman School Recruiting Strategy Development" width=”468″ height=”281”/>
+				<div class="info">
+					<h4>Recruiting Strategy Development</h4>
+					<p>Developed a new strategy for Whitman MBA School using Business Analytics</p>
+				</div>
+				<div class="full">
+				<i class="fa fa-caret-square-o-down"></i>
+					<p>
+					This project involved the use of Tableau and Excel for Analysis and Visualization of Data to identify KPIs from past recruiting efforts and acquisition data. Based on the KPIs of several years, patterns were deduced, and some aspects of the past year's strategy were changed to produce the most effective strategy.
+					</p>
+				</div>
+			</article>
+
+			<article data-sr="enter top and move 10% over 1.8s and reset">
+				<img src="images/proj5.jpg" alt="Database Design" width=”468″ height=”281”/>
+				<div class="info">
+					<h4>Database Design</h4>
+					<p>Designed a database with an interactive UI in MS Access for Mello Velo Bicycle Store</p>
+				</div>
+				<div class="full">
+				<i class="fa fa-caret-square-o-down"></i>
+					<p>
+						I gathered client requirements and designed data models in MS Visio and logical tables in MS SQL Server using SQL. Instituted an interactive user interface for the database using MS Access by creating UI forms, procedures and triggers. 
+					</p>
+				</div>
+			</article>
+
+			<article data-sr="enter top and move 10% over 1.8s and reset">
+				<img src="images/proj1.jpg" alt="Personal Portfolio Website" width=”468″ height=”281”/>
+				<div class="info">
+					<h4>Interactive Portfolio Website</h4>
+					<p>Built a personal portfolio website from scratch using CSS3, HTML, Bootstrap framework & JS</p>
+				</div>
+				<div class="full">
+				<i class="fa fa-caret-square-o-down"></i>
+					<p>
+						Using Bootstrap framework and concepts of its inbuilt LESS features, built a professional interactive resume website for myself thus creating a customized personal web space. A solo project with use of my CSS3, HTML / HTML 5, JavaScript, jQuery coding skills. Working on this project highly boosted my time management, web development and design skills. 
+					</p>
+				</div>
+			</article>	
+
+			<article data-sr="enter top and move 10% over 1.8s and reset">
+				<img src="images/proj3.jpg" alt="Advanced Web Design Course Project" width=”468″ height=”281”/>
+				<div class="info">
+					<h4>Advanced Web Design Project</h4>
+					<p>Built my first responsive website with a lot of CSS3 and HTML 5 coding from scratch. </p>
+				</div>
+				<div class="full">
+					<i class="fa fa-caret-square-o-down"></i>
+					<p>
+						Definitely, one of the best courses that I have taken in my life - the Advanced Web Design Course taught by Prof. Snyder at Syracuse University developed core web development and design skills into me. I learned advanced CSS 3 animations, HTML 5 functionalities, jQuery plugin creation and AJAX. Implemented everything I learned into this project which took a month of coding and improvement. <b>Link:</b> <a href="http://fhdedhia.mysite.syr.edu/projects/WebDesignProject" target="_blank"><span class="fa fa-link"></span></a>
+						
+					</p>
+				</div>
+			</article>
+
+			<article data-sr="enter top and move 10% over 1.8s and reset">
+				<img src="images/proj2.jpg" alt="Information System Analysis Project" width=”468″ height=”281”/>
+				<div class="info">
+					<h4>Information System Analysis</h4>
+					<p>Analysis of Exam Department's Information System at Office of Disability Services</p>
+				</div>
+				<div class="full">
+				<i class="fa fa-caret-square-o-down"></i>
+					<p>
+						Office of Disability Services (ODS) is an on-campus institution of Syracuse University that is accessible to more than 20,000 students. Me and three group members, conducted interviews with the Staff of ODS to gather requirements and issues. We created data and process models of the Exam Dept. of ODS using Microsoft Visio and published a final report on the information system with suggested improvements.
+					</p>
+				</div>			
+			</article>
+			<article data-sr="enter top and move 10% over 1.8s and reset">
+				<img src="images/proj4.jpg" alt="iConsult Company Website" width=”468″ height=”281”/>
+				<div class="info">
+					<h4>iConsult Company Website</h4>
+					<p>A group project on web development and design in Wordpress for iConsult</p>
+				</div>
+				<div class="full">
+					<i class="fa fa-caret-square-o-down"></i>
+					<p>
+						With a group of 5 individuals specializing in different aspects of web development or design, the project goals were divided and delegated to each one of us according to our strongest web skills. I was assigned development and design of one webpage and some elements of the homepage. As Wordpress was new to me, I learned my ways around the Wordpress UI and achieved my goals. Temporary <b>Link:</b> <a href="http://mtiwari.mysite.syr.edu" target="_blank"><span class="fa fa-link"></span></a>
+					</p>
+				</div>
+			</article>	
+		</div>
+	</div>
+</div><br>
+</div>
+-->
+
+
+
+<!--
+		<div class="background-gray">
+			<div id="contact" class="container">
+				<h2>Contact</h2>
+
+<p class="lead">
+	“You say I started out with practically nothing, but that isn't correct. We all start with all there is, it's how we use it that makes things possible.”<br>- Henry Ford
+</p>
+<hr>
+
+<div class="row">
+	
+	<div class="col-md-4">
+
+	<h3>Download my Resume (PDF)</h3>
+		<ul class="no-bullets">
+				<li>
+					<a href="http://www.slideshare.net/adusatalkar/adityaresume-59242778" target="_blank">Aditya Satalkar's Resume</a>
+				</li>
+		</ul>
+	<h3 style="margin-top:40px">Mobile Connect</h3>
+		<ul class="no-bullets">
+				<li style="opacity:0.6; margin-bottom:40px">201-349-8325</li>
+		</ul>
+	<h3>Social Connect</h3>
+		<ul class="no-bullets">
+			<li>
+				<a href="https://www.linkedin.com/in/adityasatalkar/" target="_blank">
+					<span class="fa fa-linkedin-square"></span>
+					 linkedin.com/in/adityasatalkar
+				</a>
+			</li>
+			<li>
+				<a href="http://twitter.com/AduSatalkar" target="_blank">
+					<span class="fa fa-twitter"></span>
+					 twitter.com/AduSatalkar
+				</a>
+			</li>		
+		</ul>	
+	</div>
+
+	<div class="col-md-8">
+	<h3>Email</h3>
+	<div id="fancyform-container">
+
+		<div id="form-container" data-sr='scale up 15% over 1.8s and reset'>
+			<h4>Drop me a quick e-mail using this form</h4>
+			
+			<form id="contact-form" name="contact-form" method="post" action="submit.php">
+			<table width="100%" border="0" cellspacing="0" cellpadding="5">
+				<tr>
+				<td width="15%"><label for="name">Name</label></td>
+				<td width="70%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="name" value="" /></td>
+				<td width="15%" id="errOffset">&nbsp;</td>
+				</tr>
+				<tr>
+				<td><label for="email">Email</label></td>
+				<td><input type="text" class="validate[required,custom[email]]" name="email" id="email" value="" /></td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<td><label for="subject">Subject</label></td>
+				<td><select name="subject" id="subject">
+					<option value="" selected="selected"> - Choose -</option>
+					<option value="Question">Question</option>
+					<option value="Transcript Request">Academic transcript request</option>
+					<option value="Hiring Proposal">Hiring proposal</option>
+				</select>          </td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<td valign="top"><label for="message">Message</label></td>
+				<td><textarea name="message" id="message" class="validate[required]" cols="35" rows="5"></textarea></td>
+				<td valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+				<td><label for="captcha">18 + 13 =</label></td>
+				<td><input type="text" class="validate[required,custom[onlyNumber]]" name="captcha" id="captcha" /></td>
+				<td valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+				<td valign="top">&nbsp;</td>
+				<td colspan="2"><input type="submit" name="button" id="button" value="Submit" />
+				<input type="reset" name="button2" id="button2" value="Reset" />
+				
+				          <img id="loading" src="images/ajax-load.gif" width="16" height="16" alt="loading" /></td>
+				</tr>
+			</table>
+			</form>
+<script type="text/javascript" src="form/minifiedform.js"></script>
+			    </div>
+
+</div>
+	</div>
+
+
+</div>
+
+<hr>
+			</div>
+		</div>
+
+-->
+
+
+		<div class="background-white">
+			<div id="Contact" class="container">
+
+				<h2>Contact</h2>
+
+
+				<h3>Download my Resume (PDF)</h3>
+				<ul class="no-bullets">
+					<li>
+						<a href="resume.pdf">Aditya Satalkar's Resume</a>
+					</li>
+				</ul>
+	
+				<h3 style="margin-top:40px">Mobile Connect</h3>
+				<ul class="no-bullets">
+					<li style="opacity:0.6; margin-bottom:40px">201-349-8325</li>
+				</ul>
+	
+				<h3>Social Connect</h3>
+				<ul class="no-bullets">
+				<li>
+
+					<div id="LinkedIn" data-sr='scale up 20% over 1.8s and reset'><a href="https://www.linkedin.com/in/adityasatalkar" target="_blank" alt="Aditya Satalkar LinkedIn Professional Profile Link">
+					<a href="https://www.linkedin.com/in/adityasatalkar/" target="_blank">
+						<span class="fa fa-linkedin-square"></span>
+						 linkedin.com/in/adityasatalkar
+					</a>
+					</a>
+					</div>
+				</li>
+			
+				<li>
+					<div id="Twitter" data-sr='scale up 20% over 1.8s and reset'><a href="http://twitter.com/AduSatalkar" target="_blank" alt="Aditya Satalkar Twitter Profile Link">
+					<a href="http://twitter.com/AduSatalkar" target="_blank">
+						<span class="fa fa-twitter"></span>
+							 twitter.com/AduSatalkar
+						</a>
+					</a>
+					</div>
+				</li>		
+				<li>
+					<div id="Facebook" data-sr='scale up 20% over 1.8s and reset'><a href="https://facebook.com/adu.satalkar" target="_blank" alt="Aditya Satalkar Facebook Profile Link">			
+					<a href="https://facebook.com/adu.satalkar" target="_blank">
+						<span class="fa fa-facebook-square"></span>
+					 		facebook.com/adu.satalkar
+						</a>
+					</a>
+					</div>
+				</li>		
+				<li>
+					<div id="GitHub" data-sr='scale up 20% over 1.8s and reset'><a href="https://github.com/ars75" target="_blank" alt="Aditya Satalkar GitHub Profile Link">			
+					<a href="https://github.com/ars75" target="_blank">
+
+			          <img src="https://www.seeklogo.net/wp-content/uploads/2015/09/github-mark-logo.png" width="36" height="36" border="0" alt="View Aditya Satalkar's profile on GitHub">
+						 &nbsp; View GitHub Profile
+					</a>
+					</a>
+					</div>
+				</ul>	
+				<br>
+				<br>
+			</div>
+			</div>
+		</div>
+
+
+		<div class="background-white">
+			<div id="footer" class="container">
+				<div id="WebsiteParaText" data-sr='scale up 20% over 1.8s and reset'>			
+				<p align="center">This website is built entirely using HTML, CSS ( BootStrap ) and JavaScript</p>
+				</div>
+			</div>
+		</div>
+
+
+		
+		<div class="modal fade" id="upgrade-dialog" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title">Your browser is out of date</h2>
+			</div>
+			<div class="modal-body">
+				<p>To get the best possible experience using our site we recommend that you upgrade to a modern web browser. To download a newer web browser click on the Upgrade button.</p>
+			</div>
+			<div class="modal-footer">
+				<a href="http://browsehappy.com/" target="_blank" class="btn btn-primary">Upgrade</a>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->		
+		<script type="text/javascript" src="js/minifiedscript.js"></script>
+		<script>
+			$('.gallery article > img').click(function() {
+				$(this).parents("article").addClass("active");
+			});
+			$('.gallery .info').click(function() {
+				$(this).parents("article").addClass("active");
+			});
+			$('.gallery .full i').click(function() {
+				$(this).parents("article").removeClass("active");
+			});
+		</script>
+		<!-- Google Analytics -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-57938823-1', 'auto');
+		ga('require', 'linkid', 'linkid.js');
+		ga('send', 'pageview');
+		</script>
+		<!-- End of Google Analytics -->
+		<script src='js/scrollReveal.min.js'></script>
+			<script>
+                 var config = { mobile: false }
+                 window.sr = new scrollReveal();
+                </script>
+</body></html>
